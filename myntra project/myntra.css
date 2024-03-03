@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* chora liye mynta se */
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    /* Improves text rendering on some browsers */
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+header{
+    /* row wise show karna ha  */
+    display: flex;
+    background-color:white;
+    height: 80px; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+
+}
+.myntra_home{
+    height: 45px;
+}
+.logo{
+    margin: 4%;
+}
+.action_bar{
+    margin-right: 4%;
+}
+.nav_bar{
+    display: flex;
+    /* yeh dena jruri tha kuki size bara hoga tbhi na space b/w hoga */
+    min-width: 500px;
+    justify-content: space-evenly;
+
+}
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* pading ke wja se he hover niche aarha nhi to just uske niche aata */
+    padding: 27px 0;
+    /* yeh jruri ha kuki hover time hile nhi  */
+    border-bottom: 5px solid #ffffff;
+}
+.nav_bar a:hover {
+    border-bottom: 4px solid #f54e77;
+}
+
+
+.nav_bar a sup {
+    color: #ff3f6c;
+    font-size: 10px;
+}
+.search_bar {
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+
+    background-color: #f5f5f6;
+    /* colr sb inspect krke liye ha  */
+    color: #282c3f;
+    font-weight: 300;
+    /* dono ko ek he dikhne span or div mera esliye  */
+    border-radius: 4px 0 0 4px;
+}
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    /* jitna minm width diye ha sb ko sama le apne mein */
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+}
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner_container {
+    margin: 40px 0;
+}
+.banner_image {
+    width: 100%;
+}
+.category_heading {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sale_item {
+    width: 250px;
+}
+
+
+
+
+
+footer {
+    height: 55px;
+    background-color: #f7f7f7;
+    padding-top: 28px;
+    font-size: 14px;
+    color: #696b79;
+    text-decoration: none;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: .3px;
+}
+
+footer a {
+    /* Changes the cursor to a pointer when hovering over links */
+    cursor: pointer;
+    color: #696b79;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-container{
+    display: flex;
+    /* Arranges footer content in a column layout */
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.online-shopping,
+.customer-policies,
+.app {
+    text-align: left;
+    margin-right: 50px;
+}
+
+.content-heading{
+    color: black;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+.content-box{
+    line-height: 1.6;
+}
+
+.para-content{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.copyright-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.horizontal-line{
+    margin-bottom: 30px;
+    opacity: 0.2;
+    height: 0.3px;
+}
+
+.office-address-content{
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.other-info-heading{
+    font-weight: 600;
+    letter-spacing: normal;
+    color: black;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.other-info-para-content{
+    margin-top: 8px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.download-button{
+    display: flex;
+    margin-top: 30px;
+}
+
+.download-button img{
+    width: 130px;
+    height: 40px;
+}
+
+.original{
+    margin-bottom: 30px;
+    color: black;
+    opacity: 0.8;
+}
+
+.customer-satisfaction{
+    margin-bottom: 30px;
+}
+
+.social-links{
+    margin-top: 12px;
+}
+
+.fb-icon,
+.tw-icon,
+.yt-icon {
+    margin-right: 6px;
+}
+
+/* Menu container */
+#menu-container {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    
+}
+#menu-container ul li {
+    padding: 15px 20px; /* Adjust padding to increase size */
+    font-weight: bold;
+    border: 1px solid #ccc; 
+    background-color: #faf3f3; 
+}
+
+/* Menu */
+#menu {
+    list-style-type: none;
+    padding: 0;
+    background-color: #302424;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+
+/* Navigation links */
+.nav_bar a {
+    position: relative;
+}
+
+/* Adjust menu position */
+.nav_bar a:hover + #menu-container,
+#menu-container:hover {
+    display: block;
+}
+#menu-container li:hover {
+    color: pink;
+    background-color: lightpink;
+    color: #282c3f;
+}
+
+
+
